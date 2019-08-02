@@ -17,6 +17,11 @@
 2. Click on 'Turn Off Bitlocker' (decrypts the drive)
 3. Navigate to _Computer Management_ / _Disk Management_
 4. Shrink the main Windows partition by the MB you require for the Linux partition. Note; _Mb_ means 1000^2 in Windows, so you probably want to size your new partition in multiples of 1024 to have a nice looking GiB partition. So if you want 200Gib, use (1024 * 200) = 204800 Mb.
+
+![shrink](./shrink.png)
+
+*Important* Don't mess with the system reserved, and/or manufacturers recovery partitions.
+
 5. Navigate to _Control Panel_ / _Bitlocker_ (use the search box if the icon is not immediately shown)
 6. Click on 'Turn On Bitlocker' (encrypts the drive again). This step will prompt you to save a new Bitlocker keyfile.
 
